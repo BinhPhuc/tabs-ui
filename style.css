@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Jost', sans-serif;
+    font-family: 'Tilt Neon', cursive;
+}
+
+body > div {
+    margin: 5% auto 0;
+    max-width: 720px;
+}
+
+.tabs{
+    display: flex;
+    position: relative;
+}
+
+.tab-item{
+    min-width: 80px;
+    padding: 16px 19px 11px 50px;
+    font-size: 20px;
+    color: #c23564;
+    opacity: 0.9;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.tab-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #c23564;
+    bottom: -3px;
+    left: 20px;
+    border-radius: 15px;
+    transition: all ease .8s;
+}
+
+.tab-item:hover {
+    color: #000;
+    opacity: 1;
+}
+
+.tab-icon {
+    width: 32px;
+    position: relative;
+    top: 7px;
+    font-size: 32px;
+    opacity: 0.5;
+}
+
+.tab-item:hover .tab-icon {
+    opacity: 1;
+    color: #c23564;
+}
+
+.tab-item.active {
+    color: #000;
+    opacity: 1;
+}
+
+.tab-item.active .tab-icon {
+    opacity: 1;
+    color: #c23564;
+}
+
+.tab-des{
+    margin-top: 10px;
+}
+
+.tab-des-item {
+    padding: 16px 20px 11px 20px;
+    display: none;
+}
+
+.tab-des-item h2 {
+    margin-bottom: 10px;
+}
+
+.tab-des-item.active {
+    display: block;
+}
+
+/* typing animation (stolen) */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
