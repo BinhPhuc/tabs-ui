@@ -86,6 +86,16 @@ body > div {
     color: #c23564;
 }
 
+.tab-icon.active .tab-item {
+    opacity: 1;
+    color: #000;
+}
+
+.tab-icon.active .tab-icon {
+    opacity: 1;
+    color: #c23564;
+}
+
 .tab-des{
     margin-top: 10px;
 }
