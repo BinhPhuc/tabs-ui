@@ -9,9 +9,9 @@ html {
     font-family: 'Tilt Neon', cursive;
 }
 
-body > div {
+.container {
     margin: 5% auto 0;
-    max-width: 720px;
+    max-width: 725px;
 }
 
 .tabs{
@@ -46,7 +46,7 @@ body > div {
     width: 100%;
 } */
 
-.tabs .line {
+.line {
     position: absolute;
     bottom: 0;
     left: 20px;
